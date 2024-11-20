@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 70px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.design-line {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.design-line img {
+    margin-top: 20px;
+    width: 93%;
+    height: auto;
+    margin: 20px 20px;
+}
+
+.text-poster {
+    text-align: center;
+    margin: 40px 20px; /* Adds space around the text poster */
+    color: #333;
+    margin-top: 10px;
+}
+
+.text-poster h1 {
+    font-size: 4rem; /* Makes the text bigger */
+    margin: 10px 0; /* Adds spacing between lines */
+    text-transform: uppercase; /* Capitalizes all text */
+    color: #111; /* Darker text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a soft shadow to the text */
+}
+
+.text-poster h1:last-child {
+    color: #f3ecec; /* Highlight the second line with a different color */
+
+    
+}
+.poster-button {
+    margin-top: 20px; /* Adds spacing between the button and text */
+    padding: 10px 40px;
+    font-size: 1rem;
+    color: white;
+    margin-left: 98ch;
+    margin-bottom: 25ch;
+    background-color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block; /* Ensures the button respects the text alignment */
+}
+
+.poster-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.poster-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.content-area {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the left and right */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    padding: 40px;
+    gap: 40px;
+}
+
+/* Left Content: Contact Form */
+.left-content {
+    margin-top: 0px;
+    width: 40%; /* Takes up 40% of the space */
+    text-align: left;
+    font-family: Arial, sans-serif;
+    margin-left: 13ch;
+    padding-left: 20px; /* Adds padding to the left side */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+/* Contact Form Container with Gray Background */
+.contact-form {
+    background-color: #eee5e5; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #0c0c0c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Fields with Padding */
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Prevents padding from affecting the width */
+}
+
+/* Focus Styling for Input Fields */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    outline: none;
+    border-color: #0070f3; /* Highlight border on focus */
+}
+
+/* Submit Button Styling */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #f1eded; /* Dark text color for contrast */
+    background-color: #413f3f; /* Grayish-white background */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.slideshow-container {
+    position: relative;
+    width: 100%; /* Takes up 55% of the space */
+    margin-right: 35ch;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-top: 0.1ch;
+    
+}
+
+/* Slideshow Styling */
+.mySlides {
+    display: none;
+}
+
+.text {
+    color: #f8f3f3;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.footer {
+    background-color: #111; /* Dark background similar to Nike's brand */
+    color: white; /* White text color */
+    padding: 40px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    font-family: Arial, sans-serif; /* Font for a modern look */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Nike Logo in the Footer */
+.nike-logo {
+    width: 150px; /* Adjust size to fit footer */
+    margin-bottom: 20px; /* Spacing below the logo */
+}
+
+/* Footer Content Text */
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #f4f4f4; /* Slight gray color on hover */
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 6}
+    to {opacity: 1}
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on smaller screens */
+    }
+
+    .right-section {
+        font-size: 12px;
+    }
+}
